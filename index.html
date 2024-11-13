@@ -232,23 +232,24 @@
 
     <!-- contact section starts -->
 
-    <section class="contact" id="contact">
+   <section class="contact" id="contact">
 
         <h1 class="heading">contact us</h1>
 
         <div class="row">
             <div class="image">
-                <img src="images/contact.png" alt="">
+                <img src="images/contact.png" alt="bks contact">
             </div>
-            <form action="">
-                <h3>send us a message</h3>
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="number" placeholder="phone number" class="box">
-                <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
-                <a href="#" class="btn">
-                    <span class="text text-1">send message</span>
-                    <span class="text text-2" aria-hidden="true">send message</span>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h3>Send us a Message</h3>
+                <input type="hidden" name="access_key" value="718186bd-e632-4d17-82d3-55b072f8d0bd">
+                <input type="text" class="box" placeholder="name" name="name" required>
+                <input type="email" class="box" placeholder="email" name="email" required>
+                <input type="phone" class="box" placeholder="phone number" name="phone" required>
+                <textarea name="message" placeholder="Your message" class="box" required></textarea>
+                <a> <button type="submit" class="btn">Submit Form
+                    <span class="text text-2" aria-hidden="true">sending...</span>
+                </button>
                 </a>
             </form>
         </div>
